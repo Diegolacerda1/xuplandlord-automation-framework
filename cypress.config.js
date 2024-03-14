@@ -5,5 +5,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: 'https://xup-landlord-fronted.herokuapp.com/auth/login'
   },
 });
