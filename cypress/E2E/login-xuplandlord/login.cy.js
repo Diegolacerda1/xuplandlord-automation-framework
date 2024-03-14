@@ -1,3 +1,5 @@
+import loginPageObjects from "../../support/pageObjects/login.pageObjects";
+
 describe('Login functionality', () => {
 
     beforeEach(() => {
@@ -6,7 +8,9 @@ describe('Login functionality', () => {
     })
    
     it('should successfully log in with valid credentials', () => {
-       
+       loginPageObjects.inputUserName()
+       loginPageObjects.inputPassword()
+       loginPageObjects.loginApp()
     });
     
 });
