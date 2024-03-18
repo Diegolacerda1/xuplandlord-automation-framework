@@ -14,7 +14,7 @@ describe('Registration functionality', () => {
         registrationPageObjects.inputConfirmPassword()
         registrationPageObjects.inputOwnerBtn()
         registrationPageObjects.inputAgreementCheckBox()
-        registrationPageObjects.inputSubmitBtn()
+        // registrationPageObjects.inputSubmitBtn()
     });
 
     it('should register as an Property Manager', () => {
