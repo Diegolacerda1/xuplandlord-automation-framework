@@ -11,7 +11,7 @@ class Login {
     }
 
     loginApp() {
-        cy.get(loginElements.btnContinue).click()
+        cy.get(loginElements.btnContinue).click({force : true})
     }
 }
 
