@@ -15,6 +15,7 @@ describe('Registration functionality', () => {
         registrationPageObjects.inputOwnerBtn()
         registrationPageObjects.inputAgreementCheckBox()
         // registrationPageObjects.inputSubmitBtn()
+        // should add assertions
     });
 
     it('should register as an Property Manager', () => {
@@ -27,6 +28,7 @@ describe('Registration functionality', () => {
         registrationPageObjects.inputManagerBtn()
         registrationPageObjects.inputAgreementCheckBox()
         // registrationPageObjects.inputSubmitBtn()
+        // should add assertions
     });
 
     it('should register as an Tenant', () => {
@@ -39,5 +41,6 @@ describe('Registration functionality', () => {
         registrationPageObjects.inputTenantBtn()
         registrationPageObjects.inputAgreementCheckBox()
         // registrationPageObjects.inputSubmitBtn()
+        // should add assertions
     });
 });
