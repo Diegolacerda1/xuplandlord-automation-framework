@@ -1,17 +1,23 @@
 import loginPageObjects from "../../support/pageObjects/login.pageObjects";
 
-describe('Login functionality', () => {
+describe("Login functionality", () => {
+  beforeEach(() => {
+    cy.visit("/");
+  });
 
-    beforeEach(() => {
+  it("should successfully log in as an Owner with valid credentials", () => {
+    loginPageObjects.inputUserName();
+    loginPageObjects.inputPassword();
+    loginPageObjects.loginApp();
+    cy.get("#kt_header")
+      .should("be.visible")
+      .and("contain", "Property Managers");
+  });
 
-        cy.visit('/') 
-    })
-   
-    it('should successfully log in with valid credentials', () => {
-       loginPageObjects.inputUserName()
-       loginPageObjects.inputPassword()
-       loginPageObjects.loginApp()
-       cy.get('#kt_toolbar').should('be.visible').and('contain', 'Properties')
-    });
-    
+  it.only("should successfully log in as an Property Manager with valid credentials", () => {
+    loginPageObjects.inputUserName();
+    loginPageObjects.inputPassword();
+    loginPageObjects.loginApp();
+    cy.get("#kt_header").should("be.visible").and("contain", "Properties");
+  });
 });
