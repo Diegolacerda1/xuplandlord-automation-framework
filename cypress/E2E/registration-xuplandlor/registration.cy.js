@@ -1,10 +1,18 @@
 import registrationPageObjects from "../../support/pageObjects/registration.pageObjects";
+import {faker} from "@faker-js/faker"
 
-beforeEach(() => {
-    cy.visit('/')
-});
+const userData = {
+    firstName: faker.person.firstName(),
+    lastName: faker.person.lastName(),
+    email: faker.internet.email(),
+    password: faker.internet.password({length: 12, prefix: 'Di12' })
+}
 
 describe('Registration functionality', () => {
+
+    beforeEach(() => {
+        cy.visit('/')
+    });
     it('should register as an Owner', () => {
         registrationPageObjects.inputSignUp()
         registrationPageObjects.inputFirstName()
