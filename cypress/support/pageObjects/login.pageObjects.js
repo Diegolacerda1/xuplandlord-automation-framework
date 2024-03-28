@@ -7,11 +7,11 @@ class Login {
     }
 
     inputPassword(didi1) {
-        cy.get(loginElements.inputPassword).type("Didi12345678")
+        cy.get(loginElements.inputPassword).type("Didi1234567")
     }
 
     loginApp() {
-        cy.get(loginElements.btnContinue).click({force : true})
+        cy.get(loginElements.btnContinue).click()
     }
 }
 

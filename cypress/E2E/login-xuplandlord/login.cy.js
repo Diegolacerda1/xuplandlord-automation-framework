@@ -11,6 +11,7 @@ describe('Login functionality', () => {
        loginPageObjects.inputUserName()
        loginPageObjects.inputPassword()
        loginPageObjects.loginApp()
+       cy.get('#kt_toolbar').should('be.visible').and('contain', 'Properties')
     });
     
 });
