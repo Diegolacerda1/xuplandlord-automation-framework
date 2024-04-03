@@ -10,6 +10,6 @@ export const REGISTRATIONFORM = {
     inputTenantBtn : 'input[id="kt_property_size_select_TENANT"]',
     inputManagerBtn : 'input[id="kt_property_size_select_PROPERTY_MANAGER"]',
     inputAgreementCheckBox : 'input[id="kt_login_toc_agree"]',
-    inputSubmitBtn : 'input[id="kt_sign_up_submit"]',
+    inputSubmitBtn : '#kt_sign_up_submit',
     
 }

@@ -6,13 +6,13 @@ class Registration {
         cy.get(registrationElements.inputSignUp).click()
     }
     inputFirstName() {
-        cy.get(registrationElements.inputFirstName).type("chupaki")
+        cy.get(registrationElements.inputFirstName).type()
     }
     inputLastName() {
-        cy.get(registrationElements.inputLastName).type("chupo")
+        cy.get(registrationElements.inputLastName).type()
     }
     inputEmail() {
-        cy.get(registrationElements.inputEmail).type("chupoaki@chupo.com")
+        cy.get(registrationElements.inputEmail).type()
     }
     inputPassword() {
         cy.get(registrationElements.inputPassword).type("Didi34526261")
