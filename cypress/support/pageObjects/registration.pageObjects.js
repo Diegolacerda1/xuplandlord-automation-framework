@@ -1,4 +1,12 @@
 const registrationElements = require('../elements/registration.elements').REGISTRATIONFORM
+import { faker } from "@faker-js/faker";
+
+const userData = {
+    firstName: faker.person.firstName(),
+    lastName: faker.person.lastName(),
+    email: faker.internet.email(),
+    password: faker.internet.password({ length: 12, prefix: "Di12" }),
+  };
 
 class Registration {
 
@@ -6,19 +14,19 @@ class Registration {
         cy.get(registrationElements.inputSignUp).click()
     }
     inputFirstName() {
-        cy.get(registrationElements.inputFirstName).type()
+        cy.get(registrationElements.inputFirstName).type(userData.firstName)
     }
     inputLastName() {
-        cy.get(registrationElements.inputLastName).type()
+        cy.get(registrationElements.inputLastName).type(userData.lastName)
     }
     inputEmail() {
-        cy.get(registrationElements.inputEmail).type()
+        cy.get(registrationElements.inputEmail).type(userData.email)
     }
     inputPassword() {
-        cy.get(registrationElements.inputPassword).type("Didi34526261")
+        cy.get(registrationElements.inputPassword).type(userData.password)
     }
     inputConfirmPassword() {
-        cy.get(registrationElements.inputConfirmPassword).type("Didi34526261")
+        cy.get(registrationElements.inputConfirmPassword).type(userData.password)
     }
     inputOwnerBtn() {
         cy.get(registrationElements.inputOwnerBtn).click({ force: true })
