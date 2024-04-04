@@ -1,5 +1,7 @@
 export const addNewProperty = {
-    btnAddNewProperty : 'input[.card-toolbar > .cursor-pointer]',
-    btnLetsAddIt : '#kt_create_property_form_property_type_Single Family Home',
-    
+    btnAddNewProperty : '.card-toolbar > .cursor-pointer',
+    btnLetsAddIt : '.card-px > .btn',
+    btnStudio : '.row > :nth-child(1) > .btn',
+    btnContinue : '#kt_create_account_form > .flex-stack > :nth-child(2) > .btn'
+
 }

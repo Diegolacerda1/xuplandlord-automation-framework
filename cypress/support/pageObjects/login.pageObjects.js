@@ -2,11 +2,11 @@ const loginElements = require('../elements/login.elements').LOGINFORM
 
 class Login {
 
-    inputUserName(didi) {
-        cy.get(loginElements.inputUserName).type("diegomanager@gmail.com")
+    inputUserName() {
+        cy.get(loginElements.inputUserName).type("didi@gmail.com")
     }
 
-    inputPassword(didi1) {
+    inputPassword() {
         cy.get(loginElements.inputPassword).type("Didi1234567")
     }
 
