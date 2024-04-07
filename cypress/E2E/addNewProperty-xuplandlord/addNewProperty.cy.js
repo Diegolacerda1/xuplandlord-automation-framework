@@ -13,6 +13,7 @@ describe('Add New Property', () => {
         dashboardPageObjects.btnLetsAddIt()
         dashboardPageObjects.btnStudio()
         dashboardPageObjects.btnContinue()
+        
     });
     
 });
