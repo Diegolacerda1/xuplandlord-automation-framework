@@ -10,8 +10,17 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
+Cypress.Commands.add('login', (email = 'didi@gmail.com', password = 'Didi1234567') => {   
+    cy.request('POST', 'https://xup-landlord.herokuapp.com/auth/signin', { 
+    username: email, 
+    password: password
+}).then(
+(response) => {
+window.localStorage.setItem('accessToken', response.body.accessToken)
+}
+) 
+})
+
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
