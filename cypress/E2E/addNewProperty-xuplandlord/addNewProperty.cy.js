@@ -4,10 +4,19 @@ import loginPageObjects from "../../support/pageObjects/login.pageObjects";
 describe('Add New Property', () => {
     beforeEach(() => {
         cy.visit("/");
-        // cy.login();
-        loginPageObjects.inputUserName()
-        loginPageObjects.inputPassword()
-        loginPageObjects.loginApp()
+        
+        // loginPageObjects.inputUserName()
+        // loginPageObjects.inputPassword()
+        // loginPageObjects.loginApp()
+        cy.request('POST', 'https://xup-landlord.herokuapp.com/auth/signin', { 
+    username: 'didi@gmail.com', 
+    password: 'Didi1234567'
+}).then(
+(response) => {
+window.localStorage.setItem('accessToken', response.body.accessToken)
+cy.log(response)
+}
+) 
       });
     it('should add a new property as owner', () => {
         dashboardPageObjects.btnAddNewProperty()
