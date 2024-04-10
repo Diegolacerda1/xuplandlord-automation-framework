@@ -1,4 +1,4 @@
-export const addNewProperty = {
+export const ADDNEWPROPERTYFORM = {
     btnAddNewProperty : '.card-toolbar > .cursor-pointer',
     btnLetsAddIt : '.card-px > .btn',
     btnStudio : '.row > :nth-child(1) > .btn',

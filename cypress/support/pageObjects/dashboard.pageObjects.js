@@ -1,4 +1,4 @@
-const dashboardElements = require('../elements/dashboard.elements').addNewProperty
+const dashboardElements = require('../elements/dashboard.elements').ADDNEWPROPERTYFORM
 
 class NewProperty {
 
