@@ -7,6 +7,8 @@ describe("Add New Property", () => {
     loginPageObjects.inputUserName()
     loginPageObjects.inputPassword()
     loginPageObjects.loginApp()
+
+   
   });
 
 
