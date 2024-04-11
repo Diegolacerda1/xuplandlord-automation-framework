@@ -2,7 +2,8 @@
 
 ## Overview
 
-Hello, and welcome to my Github page! I created this repo to demonstrate simple example of how I build an Automation Framework.
+Hello, and welcome to my Github Portfolio page! 
+I created this repo to demonstrate simple example of how I build an Automation Framework.
 That is a personal project called XUPlandlord, a software for real state management, and, showcase my skills as a Quality Assurance Engineer.
 
 ## Technologies Used
