@@ -7,8 +7,6 @@ describe("Add New Property", () => {
     loginPageObjects.inputUserName()
     loginPageObjects.inputPassword()
     loginPageObjects.loginApp()
-
-   
   });
 
 
@@ -17,5 +15,10 @@ describe("Add New Property", () => {
     dashboardPageObjects.btnLetsAddIt();
     dashboardPageObjects.btnStudio();
     dashboardPageObjects.btnContinue();
-  });
+    dashboardPageObjects.formAddress();
+    dashboardPageObjects.formEstimatedRent;
+    dashboardPageObjects.btnContinue();
+    dashboardPageObjects.btnCreateHOA();
+    dashboardPageObjects.formHoaName();
+    });
 });
