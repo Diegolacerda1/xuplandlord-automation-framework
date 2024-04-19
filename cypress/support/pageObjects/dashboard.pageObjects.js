@@ -29,7 +29,7 @@ class NewProperty {
     formHoaAddress() {
         cy.get(dashboardElements.formHoaAddress).type("23rd Place, Coconut Creek, Florida 33073, USA")
     }
-    
+
 }
 
 export default new NewProperty();
