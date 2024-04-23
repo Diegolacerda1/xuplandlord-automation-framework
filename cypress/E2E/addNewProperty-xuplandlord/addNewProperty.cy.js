@@ -21,4 +21,4 @@ describe("Add New Property", () => {
     dashboardPageObjects.btnCreateHOA();
     dashboardPageObjects.formHoaName();
     });
-});
+}); 
