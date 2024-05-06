@@ -19,7 +19,6 @@ Cypress.Commands.add('login', (email = 'didi@gmail.com', password = 'Didi1234567
     if(response.status === 201) {
         window.localStorage.setItem('accessToken', response.body.accessToken)
     }
-
 }
 ) 
 })
