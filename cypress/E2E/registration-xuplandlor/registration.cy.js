@@ -4,7 +4,7 @@ describe("Registration functionality", () => {
   beforeEach(() => {
     cy.visit("/");
   });
-  it.only("should register as an Owner", () => {
+  it("should register as an Owner", () => {
     registrationPageObjects.inputSignUp();
     registrationPageObjects.inputFirstName();
     registrationPageObjects.inputLastName();
