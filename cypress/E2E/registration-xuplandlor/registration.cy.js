@@ -47,5 +47,6 @@ describe("Registration functionality", () => {
     registrationPageObjects.inputAgreementCheckBox();
     // registrationPageObjects.inputSubmitBtn()
     // should add assertions
+    
   });
 });
